@@ -14,9 +14,7 @@ This is a Laravel 12-based RESTful API that manages Users, Projects, and Tasks. 
 5. Serve the app:`php artisan serve`
 
 
-Obtain a token via:
-
-POST /api/login
+Obtain a token via: `POST /api/login`
 
 Use the token in requests:
 
@@ -56,4 +54,5 @@ To populate the database with test data:`php artisan migrate:fresh --seed`
 
 API collection - `Task Management.postman_collection.json`
 
+Run tests - `php artisan test`
 
