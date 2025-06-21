@@ -29,18 +29,21 @@ Use the token in requests:
 
 Authorization: Bearer {token}
 
-The architecture follows a clean, layered approach with strong separation of concerns following SOLID principles.
+
+##  Project Structure
+
+The architecture follows a clean, layered approach with strong separation of concerns.
 
 app/
 ├── Http/
-│   ├── Controllers/         # Thin controllers
-│   ├── Requests/            # Form request validation
-│   └── Resources/           # API response formatting
-├── Models/                  # Eloquent models
-├── Repositories/           # Data access layer
-│   └── Interfaces/
-├── Services/               # Business logic layer
-│   └── Interfaces/
+│ ├── Controllers/ # Thin controllers
+│ ├── Requests/ # Form request validation
+│ └── Resources/ # API response formatting
+├── Models/ # Eloquent models
+├── Repositories/ # Data access layer
+│ └── Interfaces/ # Repository contracts
+├── Services/ # Business logic layer
+│ └── Interfaces/ # Service contracts
 
 
 -- Controllers only handle request/response. Business logic is in Services.
