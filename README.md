@@ -16,9 +16,7 @@ This is a Laravel 12-based RESTful API that manages Users, Projects, and Tasks. 
 
 Obtain a token via: `POST /api/login`
 
-Use the token in requests:
-
-Authorization: Bearer {token}
+Use the token in requests: `Authorization: Bearer {token}`
 
 
 ##  Project Structure
